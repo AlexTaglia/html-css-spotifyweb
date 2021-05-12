@@ -70,17 +70,17 @@ button{
     height: 100%;
 } 
 
-.nav-bottom .left{
+.left.row{
+    flex-wrap: nowrap;
+}
+
+.nav-bottom .left, .nav-bottom .right{
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-bottom .left, .nav-bottom.right{
+.nav-bottom .left, .nav-bottom .right{
     flex-basis: 200px;  
-}
-
-.nav-bottom .right{
-    min-width: 200px;  
 }
 
 .nav-bottom .cover-album-reproduction img{
@@ -92,8 +92,8 @@ button{
     color: gray;
 }
 
-.nav-bottom .left .icon i.fa-heart{
-    padding: 0 10px 0 15px;
+.nav-bottom .left .icon i.fa-heart, .nav-bottom .left .icon i.fa-folder {
+    padding-left: 10px;
 }
 
 .nav-bottom .left .icon fa-folder{
@@ -103,6 +103,11 @@ button{
 .nav-bottom .center{
     text-align: center;
     flex-grow: 1;
+}
+
+.nav-bottom .command-button{
+    display: flex;
+    justify-content: center;
 }
 
 .nav-bottom .command-button button {
@@ -145,8 +150,6 @@ button{
 
 .nav-bottom .right{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .nav-bottom .rigth .icon {
