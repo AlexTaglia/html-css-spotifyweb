@@ -15,6 +15,12 @@ a{
     color: white;
 }
 
+button{
+    background: none;
+    border: none;
+    color: white;
+}
+
 .app{
     height: 100vh;
 }
@@ -64,37 +70,104 @@ a{
     height: 100%;
 } 
 
-.left{
+.nav-bottom .left{
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-bottom .left, .nav-bottom.right{
-    flex-basis: 250px;
+    flex-basis: 200px;  
 }
 
-.nav-bottom .col{
-    flex-grow: 1;
+.nav-bottom .right{
+    min-width: 200px;  
 }
 
-.nav-bottom img{
+.nav-bottom .cover-album-reproduction img{
     width: 50px;
-    margin: 15px;
+    margin: 10px;
 } 
 
-.title{
-    height: 100%;
-}
-
-.left .icon i{
+.nav-bottom  .left .icon i{
     color: gray;
 }
 
-.left .icon i.fa-heart{
-    padding: 0 10px 0 20px;
+.nav-bottom .left .icon i.fa-heart{
+    padding: 0 10px 0 15px;
 }
 
-.left .icon fa-folder{
+.nav-bottom .left .icon fa-folder{
     padding: 0;
 }
 
+.nav-bottom .center{
+    text-align: center;
+    flex-grow: 1;
+}
+
+.nav-bottom .command-button button {
+    font-size: 20px;
+    padding: 0px 10px 15px 10px;
+}
+
+.nav-bottom .progress{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-bar{
+    background-color: rgb(112, 111, 111);
+    height: 3px;
+}
+
+.progress-bar{
+    background-color: white;
+    height: 3px;
+}
+
+.nav-bottom .center .total-bar{
+    width: 50%;
+}
+
+.progress .time-progress{
+    padding-right: 15px;
+} 
+
+.progress .time-total{
+    padding-left: 15px;
+} 
+
+.progress .progress-bar{
+    width: 30%;
+}
+
+.nav-bottom .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bottom .rigth .icon {
+    flex-grow: 1;
+}
+
+.fa-list, .fa-desktop, .fa-volume-up {
+    padding-right: 10px;
+}
+
+
+.right .volume {
+    width: 60%;
+    padding: 0 7px;
+}
+
+.right .volume .total-bar{
+    width: 100%;
+}
+
+.right .volume .progress-bar{
+    width: 30%;
+
+}
