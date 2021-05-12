@@ -4,6 +4,17 @@
     padding: 0;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 .app{
     height: 100vh;
 }
@@ -23,22 +34,67 @@
 }
 
 .content .top-nav{
-    background-color: rgba(0, 0, 0, 0.397);
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     width: 100%;
     top:0;
+    right: 0;
     height: 90px;
     line-height: 90px;
+    text-align: right;
+}
+
+.top-nav a{
+    text-transform: uppercase;
+    padding: 10px 40px; 
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 
 .app footer{
-    height: 90px;
     background-color: #282828 ;
+    height: 90px;
+    font-size: 12px;
+}
+.nav-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+} 
+
+.left{
+    justify-content: space-between;
+    align-items: center;
 }
 
-.contentuto{
-    height: 200vh;
-    width: 30px;
-    background-color: brown;
-    margin: 0 auto;
+.nav-bottom .left, .nav-bottom.right{
+    flex-basis: 250px;
 }
+
+.nav-bottom .col{
+    flex-grow: 1;
+}
+
+.nav-bottom img{
+    width: 50px;
+    margin: 15px;
+} 
+
+.title{
+    height: 100%;
+}
+
+.left .icon i{
+    color: gray;
+}
+
+.left .icon i.fa-heart{
+    padding: 0 10px 0 20px;
+}
+
+.left .icon fa-folder{
+    padding: 0;
+}
+
