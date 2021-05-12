@@ -19,9 +19,26 @@
 .app .content{
     background-color: #131922;
     overflow-y: scroll;
+    height: 100%;
+}
+
+.content .top-nav{
+    background-color: rgba(0, 0, 0, 0.397);
+    position: fixed;
+    width: 100%;
+    top:0;
+    height: 90px;
+    line-height: 90px;
 }
 
 .app footer{
     height: 90px;
     background-color: #282828 ;
+}
+
+.contentuto{
+    height: 200vh;
+    width: 30px;
+    background-color: brown;
+    margin: 0 auto;
 }
