@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app{
+    height: 100vh;
+}
+
+.app main{
+    height: calc(100vh - 90px);
+}
+
+.app .sidebar{
+    background-color: #000;
+}
+
+.app .content{
+    background-color: #131922;
+    overflow-y: scroll;
+}
+
+.app footer{
+    height: 90px;
+    background-color: #282828 ;
+}
