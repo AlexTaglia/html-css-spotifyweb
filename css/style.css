@@ -157,9 +157,8 @@ button{
 }
 
 .fa-list, .fa-desktop, .fa-volume-up {
-    padding-right: 10px;
+    padding-right: 8px;
 }
-
 
 .right .volume {
     width: 60%;
@@ -172,5 +171,21 @@ button{
 
 .right .volume .progress-bar{
     width: 30%;
+
+}
+
+@media only screen and (max-width: 576px) {
+    .nav-bottom .cover-album-reproduction img{
+        width: 40px;
+        margin: 10px;
+    } 
+
+    .right .volume {
+        padding: 0 4px;
+    }
+
+    .fa-list, .fa-desktop, .fa-volume-up {
+        padding-right: 1px;
+    }
 
 }
