@@ -37,6 +37,7 @@ button{
     background-color: #131922;
     overflow-y: scroll;
     height: 100%;
+    display: flex;
 }
 
 .content .top-nav{
