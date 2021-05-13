@@ -15,6 +15,10 @@ a{
     color: white;
 }
 
+ul{
+    list-style: none;
+}
+
 button{
     background: none;
     border: none;
@@ -57,6 +61,35 @@ button{
     margin-right: 20px;
     border: 1px solid white;
     border-radius: 20px;
+}
+
+.sidebar{
+    padding: 15px; 
+}
+
+.sidebar .logo img{
+    /* background-image: url(../img/logo.svg); */
+    /* background-position: left center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 150px; */
+    height: 40px;
+}
+
+.sidebar .logo .logo-mobile{
+    display: none;
+}
+
+.sidebar .nav-menu button{
+    display: block;
+}
+
+
+.sidebar .play-list{
+
+}
+
+.sidebar .user{
+    align-self: flex-end;
 }
 
 .app footer{
@@ -167,6 +200,8 @@ button{
 
 }
 
+/* -----------------MEDIA-------------------- */
+
 @media only screen and (max-width: 576px) {
     .nav-bottom .cover-album-reproduction img{
         width: 40px;
@@ -180,5 +215,23 @@ button{
     .fa-list, .fa-desktop, .fa-volume-up {
         padding-right: 1px;
     }
+
+
+
+
+
+    .sidebar{
+        padding: 5px;
+    }
+
+    .sidebar .logo .logo-mobile{
+        display: block;
+        width: 30px;
+    }
+
+    .sidebar .logo .logo-desktop, .hide{
+        display: none;
+    }
+
 
 }
