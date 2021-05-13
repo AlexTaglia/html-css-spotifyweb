@@ -67,19 +67,44 @@ button{
     border-radius: 20px;
 }
 
+.btn.home .description, .btn.profile .description{
+    color: white;
+    font-size: bold;
+}
+
+.btn.profile .description{
+    font-size: 15px;
+    margin-left: 5px;
+}
 
 .sidebar, 
 .sidebar .nav-menu i, 
 .sidebar a, 
 .sidebar span,
 .sidebar h4,
-.sidebar li {
+.sidebar li,
+.sidebar .btn {
     color: rgb(112, 111, 111);
     padding-top: 15px;
 }
 
+.sidebar h4{
+    color: white;
+    padding-top: 25px;
+}
+
+.sidebar li:first-child{
+    padding-top: 0;
+}
+
+
+.icon{
+    padding-right: 5px;
+}
+
 .sidebar .logo img{
-    width: 80%;
+    width: 130px;
+    padding-bottom: 20px;
 }
 
 .sidebar button{
@@ -87,17 +112,12 @@ button{
     align-items: center;
 }
 
-.sidebar .user{
-    height: 100px;
-    background-color: red;
+.nav-menu .btn, .play-list .btn, .user .btn{
+    display: flex;
+    align-items: center;
 }
 
 .nav-menu i{
-    font-size: 22px;
-    padding-right: 5px;
-}
-
-.nav-menui, .play-list i{
     font-size: 22px;
     padding-right: 5px;
 }
@@ -111,14 +131,37 @@ button{
     text-align: left;
 }
 
+svg{
+    width: 20px;
+}
+
 .sidebar .play-list{
     overflow-y: auto;
 }
+
+hr{
+    border-top: none;
+    border-bottom: 1px solid rgb(122, 122, 122);
+}
+
 
 .play-list{
     overflow: auto;
     flex-grow: 1;
     flex-shrink: 1;
+}
+
+.sidebar .icon-profile {
+    background-color: grey;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.sidebar .icon-profile svg{
+    width: 86%;
+    margin-left: 4px;
 }
 
 .app footer{
@@ -249,16 +292,21 @@ button{
         font-size: 20px;
     }
 
-    .sidebar{
-        padding: 5px;
+    .app .sidebar{
+        align-items: center;
     }
 
     .sidebar .logo .logo-mobile{
         display: block;
         width: 25px;
+        padding-bottom: 0;
     }
 
     .sidebar .logo .logo-desktop, .hide{
+        display: none;
+    }
+
+    hr{
         display: none;
     }
 
