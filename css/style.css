@@ -78,7 +78,7 @@ button{
     font-size: 15px;
 }
 
-.btn.home .description, 
+.btn.home .description a, 
 .btn.profile .description{
     color: white;
     font-size: bold;
@@ -98,6 +98,10 @@ button{
 .sidebar .btn {
     color: rgb(112, 111, 111);
     padding-top: 15px;
+}
+
+.play-list .btn i{
+    font-size: 25px;
 }
 
 .sidebar h4{
@@ -182,6 +186,27 @@ hr{
     color: #7a7a7a;
     font-weight: 800;
 }
+
+.item-menu .border-bottom-green{ 
+    width: 30%;
+    margin-top: 5px;
+    height: 2px;
+    background-color: yellowgreen;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.sidebar .border-left-green{
+    width: 2px;
+    height: 25px;
+    background-color: yellowgreen;
+    position: relative;
+    left: -14px;
+
+}
+
+
 
 .content .menu .item-menu {
     padding: 15px;
@@ -318,14 +343,19 @@ hr{
     margin: 10px;
 } 
 
+
 .nav-bottom .left .title-in-reproduction .titolo,  
 .nav-bottom .left .icon i,
-.content .menu li a, 
+.content .menu a, 
 .album-description .subtitle,
 .album-row h4{
     color: gray;
 }
 
+.nav-bottom .left .icon i:hover{
+    color: white;
+}
+   
 .nav-bottom .left .icon i.fa-heart,
 .nav-bottom .left .icon i.fa-folder {
     padding-left: 10px;
@@ -427,7 +457,8 @@ hr{
 a:hover,
 .btn:hover,
 .nav-menu btn:hover,
-.content .item-menu a:hover{
+.content .item-menu a:hover,
+.left button i:hover{
     color: white;
 }
 

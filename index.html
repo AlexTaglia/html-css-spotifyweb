@@ -34,9 +34,9 @@
                     <img src="./img/logo.svg" alt="Logo" class="logo-desktop">
                     <img src="./img/logo-small.svg" alt="logo" class="logo-mobile">
                 </div>
+                
+                <!-- SEZIONE HOME, CERCA, LIBRARY -->
                 <div class="nav-menu">
-
-                    <!-- SEZIONE HOME, CERCA, LIBRARY -->
                     <div class="btn home">
                         <div class="icon ">
                             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,8 @@
                                     fill="#ffffff" />
                             </svg>
                         </div>
-                        <div class="description hide">Home</div>
+                        <div class="description hide"><a href="">Home</a></div>
+                        <div class="border-left-green"></div>
                     </div>
 
                     <div class="btn find">
@@ -56,7 +57,7 @@
                                     fill="#ffffff" fill-rule="evenodd" />
                             </svg>
                         </div>
-                        <div class="description hide">Cerca</div>
+                        <div class="description hide"><a href="">Cerca</a></div>
                     </div>
 
                     <div class="btn library">
@@ -67,7 +68,7 @@
                                     fill="#ffffff" />
                             </svg>
                         </div>
-                        <div class="description hide">La mia libreria</div>
+                        <div class="description hide"><a href="">La mia libreria</a></div>
                     </div>
 
                 </div>
@@ -124,7 +125,9 @@
 
                     <!-- TOP MENU -->
                     <div class="row menu">
-                        <div class="item-menu"><a href="">IN EVIDENZA</a></div>
+                        <div class="item-menu"><a href="">IN EVIDENZA</a>
+                        <div class="border-bottom-green"></div>
+                        </div>
                         <div class="item-menu"><a href="">PODCAST</a></div>
                         <div class="item-menu"><a href="">CLASSIFICHE</a></div>
                         <div class="item-menu"><a href="">GENERI E MOOD</a></div>
@@ -322,7 +325,7 @@
                 <div class="right">
                     <div class="icon">
                         <button><i class="fas fa-list"></i></button>
-                        <button><i class="fas fa-desktop"></i></button>
+                        <button><i id="play" class="fas fa-desktop"></i></button>
                         <button><i class="fas fa-volume-up"></i></button>
                     </div>
 
