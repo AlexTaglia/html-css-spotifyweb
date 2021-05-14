@@ -232,6 +232,64 @@ hr{
     height: auto;
 }
 
+.cover{
+    position: relative;
+}
+
+.hover-play{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.397);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: height .5s;
+}
+
+/* .hover-play-circle{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.397);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    transition: height .5s;
+    border-radius: 50%;
+}
+
+.cover:hover .hover-play-circle{
+    height: 99%;
+    width: 100%;
+    border-radius: 50%;
+} */
+
+.cover.hover-play-opacity img{
+    opacity: 1;
+    transition: .5s;
+}
+
+.cover.hover-play-opacity:hover img{
+    opacity: 0.6;
+}
+
+.cover:hover .hover-play{
+    height: 99%;
+}
+
+.play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.cover:hover .play{
+    opacity: 1;
+}
+
 .app footer{
     background-color: #282828 ;
     height: 90px;
