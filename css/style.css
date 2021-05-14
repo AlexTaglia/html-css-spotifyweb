@@ -44,12 +44,13 @@ button{
 .app .content{
     background-color: #131922;
     overflow-y: scroll;
+    height: 100%;
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
 }
 
-.content .top-nav{
-    background-color: rgba(0, 0, 0, 0.4);
+.app .top-nav{
     position: fixed;
     width: 100%;
     top:0;
@@ -57,6 +58,10 @@ button{
     height: 90px;
     line-height: 90px;
     text-align: right;
+}
+
+.app .top-nav-bg{
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .top-nav a{
@@ -67,7 +72,8 @@ button{
     border-radius: 20px;
 }
 
-.btn.home .description, .btn.profile .description{
+.btn.home .description, 
+.btn.profile .description{
     color: white;
     font-size: bold;
 }
@@ -97,7 +103,6 @@ button{
     padding-top: 0;
 }
 
-
 .icon{
     padding-right: 5px;
 }
@@ -107,12 +112,11 @@ button{
     padding-bottom: 20px;
 }
 
-.sidebar button{
-    display: flex;
-    align-items: center;
-}
 
-.nav-menu .btn, .play-list .btn, .user .btn{
+.sidebar button,
+.nav-menu .btn, 
+.play-list .btn, 
+.user .btn{
     display: flex;
     align-items: center;
 }
@@ -135,20 +139,17 @@ svg{
     width: 20px;
 }
 
-.sidebar .play-list{
+.sidebar .play-list,
+.content{
     overflow-y: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 hr{
     border-top: none;
     border-bottom: 1px solid rgb(122, 122, 122);
-}
-
-
-.play-list{
-    overflow: auto;
-    flex-grow: 1;
-    flex-shrink: 1;
+    margin-top: 10px;
 }
 
 .sidebar .icon-profile {
@@ -164,24 +165,54 @@ hr{
     margin-left: 4px;
 }
 
+.content .menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.content ul li{
+    display: inline-block;
+    padding: 15px 15px;
+}
+
+.content .album {
+    padding: 10px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.hit img{
+    border-radius: 50%;
+}
+
+.content .cover img{
+    width: 100%;
+    height: auto;
+}
+
 .app footer{
     background-color: #282828 ;
     height: 90px;
     font-size: 12px;
 }
+
 .nav-bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 100%;
 } 
 
 .nav-bottom .left, 
 .nav-bottom .right{
+    flex-basis: 200px;  
+}
+
+.nav-bottom,
+.nav-bottom .left, 
+.nav-bottom .right{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 200px;  
 }
 
 .nav-bottom .cover-album-reproduction img{
@@ -190,7 +221,8 @@ hr{
 } 
 
 .nav-bottom .left .title-in-reproduction .titolo,  
-.nav-bottom .left .icon i{
+.nav-bottom .left .icon i,
+.content .menu li a{
     color: gray;
 }
 
@@ -199,14 +231,15 @@ hr{
     padding-left: 10px;
 }
 
-.nav-bottom .command-button{
-    display: flex;
-    justify-content: center;
-}
 
 .nav-bottom .command-button button {
     font-size: 20px;
     padding: 0px 10px 15px 10px;
+}
+
+.nav-bottom .command-button{
+    display: flex;
+    justify-content: center;
 }
 
 .nav-bottom .center .progress{
@@ -245,17 +278,13 @@ hr{
     width: 30%;
 }
 
-.nav-bottom .right{
-    display: flex;
-}
-
 .nav-bottom .rigth .icon, 
 .nav-bottom .center {
     flex-grow: 1;
 }
 
 .fa-list, .fa-desktop, .fa-volume-up {
-    padding-right: 8px;
+    padding-right: 6px;
 }
 
 .nav-bottom .right .volume {
@@ -269,7 +298,6 @@ hr{
 
 .nav-bottom .right .volume .progress-bar{
     width: 70%;
-
 }
 
 /* -----------------MEDIA-------------------- */
@@ -294,6 +322,7 @@ hr{
 
     .app .sidebar{
         align-items: center;
+        padding: 5px;
     }
 
     .sidebar .logo .logo-mobile{
@@ -308,6 +337,10 @@ hr{
 
     hr{
         display: none;
+    }
+
+    .btn.install .icon{
+        margin-left: 5px;
     }
 
 
