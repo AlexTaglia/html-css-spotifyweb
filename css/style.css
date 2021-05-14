@@ -70,6 +70,12 @@ button{
     margin-right: 20px;
     border: 1px solid white;
     border-radius: 20px;
+    font-size: 12px;
+    transition: all .5s;
+}
+
+.top-nav a:hover{
+    font-size: 15px;
 }
 
 .btn.home .description, 
@@ -196,7 +202,25 @@ hr{
     padding: 0 0 15px 10px;
 }
 .content .album-row h2{
-    padding: 30px 0 0 10px;
+    padding: 30px 0 10px 10px;
+}
+
+.content .album-description .title{
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.content .album-description .subtitle{
+    font-size: 10px;
+    font-size: bold;
+}
+
+.content .row .cover .opacity{
+    background-color: red;
+    width: 100%;
+    height: 150%;
+    transition: all 3s ease 0s;
 }
 
 .hit img{
@@ -238,7 +262,9 @@ hr{
 
 .nav-bottom .left .title-in-reproduction .titolo,  
 .nav-bottom .left .icon i,
-.content .menu li a{
+.content .menu li a, 
+.album-description .subtitle,
+.album-row h4{
     color: gray;
 }
 
@@ -290,8 +316,28 @@ hr{
     padding-left: 15px;
 } 
 
-.progress .progress-bar{
+.progress .progress-bar, 
+.volume .progress-bar{
     width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.progress-bar .dot{
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
+.total-bar:hover .progress-bar{
+    background-color: rgb(74, 230, 74);
+}
+
+.total-bar:hover .progress-bar .dot{
+    display: block;
 }
 
 .nav-bottom .rigth .icon, 
@@ -319,6 +365,14 @@ hr{
 .mr-hyde{
     display: none;
 }
+
+a:hover,
+.btn:hover,
+.nav-menu btn:hover,
+.content .item-menu a:hover{
+    color: white;
+}
+
 
 /* -----------------MEDIA-------------------- */
 
