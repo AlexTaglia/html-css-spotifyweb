@@ -452,6 +452,7 @@ hr{
     display: none;
 }
 
+.play-list a:hover,
 .btn:hover,
 .content .item-menu a:hover,
 .left .button i:hover {
