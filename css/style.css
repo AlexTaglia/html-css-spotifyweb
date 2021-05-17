@@ -166,6 +166,7 @@ hr{
 .sidebar .icon-profile svg{
     width: 86%;
     margin-left: 4px;
+    
 }
 
 .content .menu{
@@ -451,11 +452,24 @@ hr{
     display: none;
 }
 
-a:hover,
 .btn:hover,
-.nav-menu btn:hover,
 .content .item-menu a:hover,
-.left button i:hover{
+.left .button i:hover {
+    color: white;
+}
+
+.nav-menu .btn.find svg path,
+.nav-menu .btn.library svg path{
+    fill: gray;
+}
+
+.nav-menu .btn.find:hover svg path,
+.nav-menu .btn.library:hover svg path{
+    fill: white;
+}
+
+.nav-menu .btn.find:hover a,
+.nav-menu .btn.library:hover a{
     color: white;
 }
 
